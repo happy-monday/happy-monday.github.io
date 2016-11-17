@@ -1,6 +1,6 @@
 <html>
 <head>
-	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -64,20 +64,27 @@
 		}
 
 	</style>
+<script>
+//var $ = jQuery.noConflict();
+$(document).ready(function($){
+	var windowHeight = $( window ).height() / 2;
+	$("#form_row").css("margin-top", windowHeight);
+});
 
+</script>
 </head>
 <body>
 	<div class="social-media container"><!--<a href=""><img class="alignright size-full wp-image-1695" src="images/social_media/snap-icon-40x40.png" alt="snapchat" width="30" height="30"></a><a href="" target="_blank"><img class="alignright size-full wp-image-1708" src="images/social_media/youtube-icon-40x40.png" alt="youtube" width="30" height="30"></a><a href="" target="_blank"><img class="alignright size-full wp-image-1710" src="images/social_media/twitter-icon-40x40.png" alt="twitter" width="30" height="30"></a>--><a href="https://www.instagram.com/happymondaymovie/" target="_blank"><img class="alignright size-full wp-image-1714" src="images/social_media/instagram-icon-40x40.png" alt="" width="30" height="30"></a><a href="https://www.facebook.com/happymondaymovie" target="_blank"><img class="alignright size-full wp-image-1712" src="images/social_media/facebook-icon-40x40.png" alt="facebook" width="30" height="30"></a></div>
 	<div id="happy_monday_vid-bg"><video id="happy_monday_vid" playsinline onclick="this.play();" autoplay="autoplay" autobuffer="" loop="loop" muted=""><source src="happy_monday_vid.mp4" type="video/mp4"></video>
 	</div>
-	<div class = "row" style="margin-top:45%;">
+	<div class = "row" id="form_row" style="vertical-align: middle">
 		<!-- Begin MailChimp Signup Form -->
 		<div class = "col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4" style="text-align: center; vertical-align: middle;">
 			<div id="mc_embed_signup">
 			<form action="//happymondaymovie.us14.list-manage.com/subscribe/post?u=fd0bd327b81f9f00cdd869b83&amp;id=5708b2e50f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate>
 				<div id="mc_embed_signup_scroll">
 					<div class = "input-group">
-						<div class="mc-field-group col-sm-5 col-md-12">
+						<div class="mc-field-group col-sm-12 col-md-12">
 							<input type="email" value="" placeholder="Email" name="EMAIL" style="background:transparent; color: #fff; border: solid white;" class="input-lg required email form-control" id="mce-EMAIL">
 						</div>
 						<div id="mce-responses" class="clear">
@@ -94,5 +101,6 @@
 		</div>
 	</div>
 <!--End mc_embed_signup-->
+
 </body>
 </html>
